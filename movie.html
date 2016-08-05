@@ -90,7 +90,7 @@ var inputDom = document.querySelector('.search-area input'),
 
         var str = '';
         cityList.forEach(function(val){
-            if(val[1].substr(0,key.length) == key || val[2].substr(0,key.length) == key){
+            if(val[0].substr(0,key.length) == key || val[1].substr(0,key.length) == key || val[2].substr(0,key.length) == key){
                 str += '<p>'+val[0]+'</p>';
             }
 
